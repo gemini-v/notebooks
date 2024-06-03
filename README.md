@@ -2,6 +2,8 @@
 
 A collection of Jupyter based models.
 
+* [aphaselock.ipynb](aphaselock.ipynb) is a frequency response and stability model of an analogue phase locked loop developed for synchronisation of a digital audio interface to an electroencephalography (EEG) data acquisition system. It was derived from expressions and data published in Philips Semiconductors (1995), "CMOS phase-locked loops: 74HC(T)4046A/7046A & 74HCT9046A HCMOS Designer's Guide".
+
 * [dphaselock.ipynb](dphaselock.ipynb) is a frequency response and stability model of a digital phase locked loop developed for audio clock recovery applications. The loop is of type 2 and has programmable coefficients, allowing for fast acquisition of phase lock but also a low corner frequency, providing significant jitter rejection across the audio band. The loop was implemented using programmable logic and features a noise-shaping digit controlled oscillator.
 
 * [dsdaudio.ipynb](dsdaudio.ipynb) is a simulation and performance evaluation model of a sigma-delta modulator for Direct Stream Digital audio applications. The modulator is of 5th order, employing a cascade of 2 biquadratic filter sections which place zeros in the noise transfer function at approximately 10 kHz and 20 kHz. Each of the filter coefficients is an integer power of 2, making implementation possible without the use of multiplication hardware.
